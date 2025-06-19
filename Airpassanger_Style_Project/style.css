@@ -1,0 +1,550 @@
+@font-face {
+    font-family: 'Exo2';
+    src: url('./font/exo_2/Exo2-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('./font/exo_2/Exo2-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('./font/exo_2/Exo2-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('./font/exo_2/Exo2-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainContainer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.lilSq{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15px;
+
+}
+
+.lilSq .lilBlueSq{
+    background-color: rgb(37, 94, 158);
+    width: 25px;
+}
+
+.lilSq .lilGreySq{
+    background-color: rgb(85, 85, 85);
+    width: 25px;
+}
+
+div.overNav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+div.overNav .mainLogo, footer .mainLogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.overNav img.blueLogo, footer img.blueLogo{
+    height: 100%;
+    max-height: 60px;
+    object-fit: contain;
+}
+
+div.titre{
+    display: flex;
+    font-family: 'Exo2', sans-serif;
+    font-weight: bold;
+}
+
+div.titre h1.air{
+    color: rgb(37, 94, 158);
+}
+
+div.titre h1, .overNav h3, .searchSection h5, footer h3{
+    margin: 0px;
+    color: rgb(85, 85, 85);
+}
+
+.overNav h3, footer h3{
+    font-family: 'Exo2', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+}
+
+.searchSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchSection h5{
+    font-family: 'Exo2', sans-serif;
+    font-weight: normal;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.searchBar input[type="text"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    width: 200px;
+    outline: none;
+}
+
+.searchZone p{
+    font-family: 'Exo2', sans-serif;
+    font-size: 11px;
+    color: rgb(37, 94, 158);
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.arrow-down {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(85, 85, 85);
+    border-bottom: 0;
+}
+
+.searchBar button {
+    padding: 5px 10px;
+    background-color: white ;
+    border: none;
+    cursor: pointer;
+}
+.searchBar button img{
+    height: 20px;
+    object-fit: contain;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0;
+    padding: 0 10px;
+}
+
+nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 66%;
+    width: 2px;
+    background-color: #ccc;
+    transform: translateY(33%);
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Exo2', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(37, 94, 158);
+}
+
+div.separator{
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+h2.underTitle{
+    font-family: 'Exo2', sans-serif;
+    font-weight: lighter;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    letter-spacing: 3px;
+    
+}
+
+div.logoLine{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+div.logoLine a img{
+    width: 30px;
+}
+
+div.backgroundLine{
+    background-color: #ccc;
+    width: 100vw;
+    height: 450px;
+    /* margin-bottom: calc(600px - 40%); */
+    margin-bottom: 150px;
+}
+
+div.airTitles{
+    display: inline-flex;
+    border: none;
+    border-bottom: 2px solid rgb(85, 85, 85);
+    box-sizing: border-box;
+}
+
+h2.Air{
+    font-family: 'Exo2', sans-serif;
+    font-weight: lighter;
+    color: rgb(85, 85, 85);
+    margin: 0;
+}
+
+h2.Title{
+    font-family: 'Exo2', sans-serif;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    margin: 0;
+}
+
+div.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 1%;
+    /* height: 100vh; vh c'est par rapport à la taille d'écran */ 
+}
+
+.box{
+    /* height: 15vh; */
+    background-color: #e1e1e1;
+    /* max-height: 448.7px; */
+}
+
+.box img{
+    width: 100%;
+}
+
+.box .boxTxt{
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.box .boxTxt time{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-family: 'Exo2', sans-serif;
+    font-weight: normal;
+    color: rgb(85, 85, 85);
+}
+.box .boxTxt h3 {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin-top: 5px;
+    font-family: 'Exo2', sans-serif;
+    font-weight: bold;
+    font-size: 110%;
+    color: rgb(37, 94, 158);
+}
+
+.box .boxTxt p {
+    font-size: small;
+    margin: 0;
+    font-family: 'Exo2', sans-serif;
+    font-weight: normal;
+    color: rgb(85, 85, 85);
+    /* max-height: 167.2px; */
+}
+
+.centerAnImage{
+    text-align: center;
+    height: 100%;
+}
+
+.box .boxTxt img{
+    width: 13%;
+}
+
+div.reklamySeparator{
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+div.reklamySeparator h2{
+    color: white;
+    font-family: 'Exo2', sans-serif;
+    font-weight: normal;
+}
+
+div.planeBackground{
+    background-image: url('images/planeBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    /* width: 70%; */
+    margin: 0 15%;
+    padding: 0 3%;
+    margin-bottom: 1%;
+}
+
+div.planeBackground h4{
+    font-family: 'Exo2', sans-serif;
+    font-weight: bold;
+    width: 45%;
+    color: rgb(85, 85, 85);
+    margin-bottom: 2%;
+}
+
+div.planeBackground p{
+    width: 45%;
+    font-family: 'Exo2', sans-serif;
+    font-weight: normal;
+    font-size: smaller;
+    color: rgb(85, 85, 85);
+    margin: 0;
+}
+
+div.planeBackground .centerAnImage{
+    width: 45%;
+}
+
+div.planeBackground img{
+    width: 7%;
+}
+
+div.airChallenges{
+    margin: 0 15%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.imagePlaneReactor{
+    background-image: url('images/planeReactor.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div.textChallenges{
+    width: 30%;
+}
+
+div.airChallenges div.airTitles h2.AirW{
+    color: white;
+    font-family: 'Exo2', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+}
+
+div.airChallenges div.airTitles h2.TitleW{
+    color: white;
+    font-family: 'Exo2', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+div.airChallenges div.airTitles{
+    display: inline-flex;
+    border: none;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+}
+
+div.textChallenges h4{
+    font-family: 'Exo2', sans-serif;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    margin-bottom: 2%;
+    margin-top: 15%;
+}
+
+div.textChallenges p{
+    font-family: 'Exo2', sans-serif;
+    font-weight: normal;
+    font-size: smaller;
+    color: rgb(85, 85, 85);
+    margin: 0;
+}
+
+div.backgroundLineBlue{
+    background-color: #d0efff;
+    width: 100vw;
+    padding-bottom: 3%;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 0 15%;
+    font-family: 'Exo2', sans-serif;
+    font-weight: normal;
+    font-size: smaller;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #d0efff;
+}
+
+th, td {
+    border: 1px solid rgb(85, 85, 85);
+    padding: 10px;
+    text-align: center;
+}
+
+thead th, thead td{
+    border: 2px solid rgb(85, 85, 85);
+}
+
+thead p{
+    margin: 0;
+}
+
+thead th {
+    background: #d0efff;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background: #b4e6ff;
+}
+
+.table-container img {
+    height: 60px;
+}
+
+.x-cell {
+    font-weight: bold;
+}
+
+footer{
+    padding: 10px;
+    width: 100%;
+    background-color: #595959;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .mainLogo{
+    transform: scale(0.5);
+}
+
+footer .titre h1, footer .titre h1.air, footer h3, footer nav ul li a{
+    color: white;
+    font-weight: 100;
+}
+
+footer .mainLogo .blueLogo{
+    border-radius: 100px;
+}
+
+footer nav{
+    transform: scale(0.5);
+    margin-right: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    div.overNav{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div.overNav div{
+        justify-content: center ;
+    }
+
+    nav{
+        transform: scale(0.7);
+    }
+
+    div.logoLine{
+        transform: scale(0.7);
+    }
+
+    div.backgroundLine{
+        height: auto;
+        margin-bottom: 3%;
+    }
+
+    div.grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mainContainer, div.reklamySeparator{
+        width: 100%;
+    }
+
+    div.airChallenges, div.planeBackground, div.table-container{
+        margin: 0 5%;
+        margin-bottom: 3%;
+    }
+
+    div.reklamySeparator {
+        font-size: 50%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+}
